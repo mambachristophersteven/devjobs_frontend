@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 20vh;
     border: 2px solid red;
@@ -8,6 +9,43 @@
     width: 100vw;
     background-image: url(../../public/background.png);
     height: 12vh;
+    border-radius: 0px 0px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+}
 
+.top .logo img{
+    width: 100px;
+    height: 30px;
+}
 
+.toggler{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-button{
+    background: #ffffff;
+    width: 45px;
+    height: 22px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 5px;
+}
+
+.toggle-button > div{
+    width: 14px;
+    height: 14px;
+    background: rgba(89, 100, 224, 1);
+    border-radius: 50%;
+}
+
+.not-active{
+    visibility: hidden;
 }
