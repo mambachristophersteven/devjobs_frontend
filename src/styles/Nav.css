@@ -1,11 +1,13 @@
 .container{
     display: flex;
     width: 100vw;
-    height: ;
+    height: 20vh;
     border: 2px solid red;
 }
 .top{
     width: 100vw;
     background-image: url(../../public/background.png);
+    height: 20vh;
+
 
 }
