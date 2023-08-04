@@ -3,17 +3,18 @@
     flex-direction: column;
     width: 100vw;
     height: 20vh;
-    border: 2px solid red;
+    position: relative;
+    align-items: center;
 }
 .top{
     width: 100vw;
     background-image: url(../../public/background.png);
-    height: 12vh;
+    height: 15vh;
     border-radius: 0px 0px 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 200px 0 200px;
+    padding: 0 200px 40px 200px;
 }
 
 .top .logo img{
@@ -48,4 +49,100 @@
 
 .not-active{
     visibility: hidden;
+}
+
+.searchbar{
+    width: 77vw;
+    height: 70px;
+    margin-top: -35px;
+    background: var(--searchbar-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+/* .searchbar > div{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-right: 1px solid hsl(215, 29%, 70%);
+} */
+
+.searchCompany{
+    flex: 1.5;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-right: 1px solid hsl(215, 29%, 70%);
+
+}
+
+.searchLocation{
+    flex: 1;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-right: 1px solid hsl(215, 29%, 70%);
+}
+
+.searchFulltime{
+    flex: 0.8;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.searchCompany input{
+    height: inherit;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: kumbh;
+    font-size: 16px;
+}
+
+.searchLocation input{
+    height: inherit;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: kumbh;
+    font-size: 16px;
+    color: var(--search-color);
+}
+
+.searchFulltime .checkbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchFulltime .checkbox input{
+    width: 24px;
+    height: 24px;
+    accent-color: rgba(89, 100, 224, 1);
+    outline: none;
+}
+
+.searchFulltime .checkbox .fulltime{
+    color: var(--fulltime-color);
+    font-family: kumbhBold;
+    font-size: 16px;
 }

@@ -1,6 +1,24 @@
 @font-face {
-  font-family: kumbh;
+  font-family: kumbhBold;
   src: url(../../public/KumbhSans-Bold.ttf);
+}
+@font-face {
+  font-family: kumbh;
+  src: url(../../public/KumbhSans-Regular.ttf);
+}
+
+:root{
+  --background-color: #F4F6F8;
+  --searchbar-background: rgba(255, 255, 255, 1);
+  --search-color: rgba(25, 32, 45, 1);
+  --fulltime-color: rgba(25, 32, 45, 1);
+}
+
+.dark-mode{
+  --background-color: rgba(18, 23, 33, 1);
+  --searchbar-background: rgba(25, 32, 45, 1);
+  --search-color: rgba(255, 255, 255, 1);
+  --fulltime-color: rgba(255, 255, 255, 1);
 }
 
 *{
@@ -9,3 +27,8 @@
   box-sizing: border-box;
   font-family: kumbh;
 }
+
+body{
+  background: #F4F6F8;
+}
+

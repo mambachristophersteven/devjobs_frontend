@@ -19,13 +19,19 @@ export default function Nav() {
         </div>
         <div className="searchbar">
           <div className="searchCompany">
-            <input type="text" id='companyName'/>
+            <img src="/search.svg" alt="search-icon" />
+            <input type="text" id='companyName' placeholder='Filter by title, companies, expertise…'/>
           </div>
           <div className="searchLocation">
-            <input type="text" id='companyName'/>
+            <img src="/location.svg" alt="" />
+            <input type="text" id='companyName' placeholder='Filter by location…'/>
           </div>
           <div className="searchFulltime">
-            <input type="checkbox" name="fullTime" id="fullTime" />
+            <div className="checkbox">
+              <input type="checkbox" name="fullTime" id="fullTime" />
+              <p className='fulltime'>Full Time Only</p>
+            </div>
+            <button>Search</button>
           </div>
         </div>
     </div>
