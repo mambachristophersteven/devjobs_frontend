@@ -1,0 +1,10 @@
+.button{
+    width: 123px;
+    height: 48px;
+    background: rgba(89, 100, 224, 1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: kumbhBold;
+    font-size: 16px;
+}

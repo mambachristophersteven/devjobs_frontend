@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Nav.css';
+import Button from './Button';
 
 export default function Nav() {
   return (
@@ -31,7 +32,7 @@ export default function Nav() {
               <input type="checkbox" name="fullTime" id="fullTime" />
               <p className='fulltime'>Full Time Only</p>
             </div>
-            <button>Search</button>
+            <Button text={'Search'}/>
           </div>
         </div>
     </div>
