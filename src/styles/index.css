@@ -8,7 +8,7 @@
 }
 
 :root{
-  --background-color: #F4F6F8;
+  --background-color: rgba(244, 246, 248, 1);
   --searchbar-background: rgba(255, 255, 255, 1);
   --search-color: rgba(25, 32, 45, 1);
   --fulltime-color: rgba(25, 32, 45, 1);
@@ -29,6 +29,6 @@
 }
 
 body{
-  background: #F4F6F8;
+  background: var(--background-color);
 }
 

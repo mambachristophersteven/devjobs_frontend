@@ -3,6 +3,12 @@ import '../styles/Nav.css';
 import Button from './Button';
 
 export default function Nav() {
+
+  const theme = ()=>{
+    document.body.classList.toggle("dark-mode");
+    document.getElementById('active-theme').classList.toggle('not-active');
+    document.getElementById('not-active-theme').classList.toggle('not-active');
+  }
   return (
     <div className='container'>
         <div className="top">
@@ -11,9 +17,9 @@ export default function Nav() {
           </div>
           <div className="toggler">
             <img src="/sun.svg" alt="sun"/>
-            <div className="toggle-button">
-              <div className='active'></div>
-              <div className='not-active'></div>
+            <div className="toggle-button" onClick={theme}>
+              <div className='active' id='active-theme'></div>
+              <div className='not-active' id='not-active-theme'></div>
             </div>
             <img src="/moon.svg" alt="moon" />
           </div>
