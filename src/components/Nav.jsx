@@ -35,7 +35,7 @@ export default function Nav() {
           </div>
           <div className="searchFulltime">
             <div className="checkbox">
-              <input type="checkbox" name="fullTime" id="fullTime" />
+              <div className="check"></div>
               <p className='fulltime'>Full Time Only</p>
             </div>
             <Button text={'Search'}/>
