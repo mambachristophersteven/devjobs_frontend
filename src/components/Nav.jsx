@@ -4,10 +4,24 @@ import Button from './Button';
 
 export default function Nav() {
 
+
   const theme = ()=>{
     document.body.classList.toggle("dark-mode");
     document.getElementById('active-theme').classList.toggle('not-active');
     document.getElementById('not-active-theme').classList.toggle('not-active');
+  }
+
+  const check = () =>{
+    let uncheckedbox =  document.getElementById('unchecked');
+    let checkedbox =  document.getElementById('checked');
+    checkedbox.style.display = 'flex';
+    uncheckedbox.style.display = 'none';
+  }
+  const uncheck = () =>{
+    let uncheckedbox =  document.getElementById('unchecked');
+    let checkedbox =  document.getElementById('checked');
+    checkedbox.style.display = 'none';
+    uncheckedbox.style.display = 'flex';
   }
   return (
     <div className='container'>
@@ -35,7 +49,10 @@ export default function Nav() {
           </div>
           <div className="searchFulltime">
             <div className="checkbox">
-              <div className="check"></div>
+              <div className="unchecked" id='unchecked' onClick={check}></div>
+              <div className="check" id='checked' onClick={uncheck}>
+                <img src="/check.svg" alt="" />
+              </div>
               <p className='fulltime'>Full Time Only</p>
             </div>
             <Button text={'Search'}/>
