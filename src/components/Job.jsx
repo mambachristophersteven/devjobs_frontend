@@ -7,7 +7,7 @@ export default function Job() {
       <img src="/companies/scoot.png" alt="scoot company logo" className={styles.companyImage}/>
       <div className={styles.details}>
         <div className={styles.topDetails}>
-          <p className={styles.timeAndRole}>5h ago <span>. </span>Full Time</p>
+          <p className={styles.timeAndRole}>5h ago <span><img src="/oval.png" alt="" /></span>Full Time</p>
           <p className={styles.jobTitle}>Senior Software Engineer</p>
           <p className={styles.companyName}>Scoot</p>
         </div>
