@@ -4,7 +4,7 @@ import Nav from './Nav'
 import Body from './Body'
 export default function Home() {
   return (
-    <div className="container">
+    <div className="home">
         <Nav/>
         <Body/>
     </div>
