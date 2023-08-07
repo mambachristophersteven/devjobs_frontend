@@ -14,6 +14,8 @@
   --fulltime-color: rgba(25, 32, 45, 1);
   --checkbox-background: rgb(231, 229, 229);
   --job-background: rgba(255, 255, 255, 1);
+  --role-color: rgba(110, 128, 152, 1);
+  --location-color: rgba(89, 100, 224, 1);
 }
 
 .dark-mode{
