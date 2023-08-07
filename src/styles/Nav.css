@@ -40,6 +40,15 @@
     padding: 5px;
 }
 
+.active{
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.active:hover{
+    background: rgba(147, 155, 244, 1);
+}
+
 .toggle-button > div{
     width: 14px;
     height: 14px;
