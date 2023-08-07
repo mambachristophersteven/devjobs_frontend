@@ -1,0 +1,16 @@
+.container{
+    border: 1px solid red;
+    padding: 20px;
+    padding-top: 20px;
+    position: relative;
+    width: 30%;
+    margin-bottom: 50px;
+}
+.companyImage{
+    position: absolute;
+    top: -20%;
+    border-radius: 15px;
+}
+.details{
+    padding-top: 10px;
+}

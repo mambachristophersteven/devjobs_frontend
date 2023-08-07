@@ -8,6 +8,14 @@ export default function Body() {
     <div className={styles.container}>
         <div className={styles.jobs}>
             <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
+            <Job/>
         </div>
         <div className={styles.load}>
             <Button text={'Load More'}/>

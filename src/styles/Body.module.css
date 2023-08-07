@@ -1,9 +1,18 @@
 .container{
-    width: 100vw;
+    width: 70vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 100px 100px 100px;
 
+}
+
+.jobs{
+    width: 100%;
+    border: 2px solid green;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
