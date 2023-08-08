@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/Button.css'
+import styles from '../styles/Button.module.css'
 
 export default function Button( {text} ) {
   return (
-    <button className='button'>
+    <button className={styles.container}>
         {text}
     </button>
   )

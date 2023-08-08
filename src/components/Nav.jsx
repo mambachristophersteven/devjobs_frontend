@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Nav.css';
+import styles from '../styles/Nav.module.css';
 import Button from './Button';
 
 export default function Nav() {
@@ -24,36 +24,36 @@ export default function Nav() {
     uncheckedbox.style.display = 'flex';
   }
   return (
-    <div className='container'>
-        <div className="top">
-          <div className="logo">
+    <div className={styles.container}>
+        <div className={styles.top}>
+          <div className={styles.logo}>
             <img src="/logo.png" alt="" />
           </div>
-          <div className="toggler">
+          <div className={styles.toggle}>
             <img src="/sun.svg" alt="sun"/>
-            <div className="toggle-button" onClick={theme}>
-              <div className='active' id='active-theme'></div>
-              <div className='not-active' id='not-active-theme'></div>
+            <div className={styles.toggleButton} onClick={theme}>
+              <div className={styles.active} id='active-theme'></div>
+              <div className={styles.notActive} id='not-active-theme'></div>
             </div>
             <img src="/moon.svg" alt="moon" />
           </div>
         </div>
-        <div className="searchbar">
-          <div className="searchCompany">
+        <div className={styles.searchbar}>
+          <div className={styles.searchCompany}>
             <img src="/search.svg" alt="search-icon" />
             <input type="text" id='companyName' placeholder='Filter by title, companies, expertise…'/>
           </div>
-          <div className="searchLocation">
+          <div className={styles.searchLocation}>
             <img src="/location.svg" alt="" />
             <input type="text" id='companyName' placeholder='Filter by location…'/>
           </div>
-          <div className="searchFulltime">
-            <div className="checkbox">
-              <div className="unchecked" id='unchecked' onClick={check}></div>
-              <div className="check" id='checked' onClick={uncheck}>
+          <div className={styles.searchFulltime}>
+            <div className={styles.checkbox}>
+              <div className={styles.unchecked} id='unchecked' onClick={check}></div>
+              <div className={styles.check} id='checked' onClick={uncheck}>
                 <img src="/check.svg" alt="" />
               </div>
-              <p className='fulltime'>Full Time Only</p>
+              <p className={styles.fulltime}>Full Time Only</p>
             </div>
             <Button text={'Search'}/>
           </div>
