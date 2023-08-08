@@ -1,4 +1,4 @@
-.button{
+.container{
     width: 123px;
     height: 48px;
     background: rgba(89, 100, 224, 1);
@@ -10,6 +10,6 @@
     transition-duration: 0.3s;
 }
 
-.button:hover{
+.container:hover{
     background: rgba(147, 155, 244, 1);
 }

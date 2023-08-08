@@ -7,8 +7,8 @@ export default function Nav() {
 
   const theme = ()=>{
     document.body.classList.toggle("dark-mode");
-    document.getElementById('active-theme').classList.toggle('not-active');
-    document.getElementById('not-active-theme').classList.toggle('not-active');
+    document.getElementById('active-theme').classList.toggle('notActive');
+    document.getElementById('not-active-theme').classList.toggle('notActive');
   }
 
   const check = () =>{
@@ -29,7 +29,7 @@ export default function Nav() {
           <div className={styles.logo}>
             <img src="/logo.png" alt="" />
           </div>
-          <div className={styles.toggle}>
+          <div className={styles.toggler}>
             <img src="/sun.svg" alt="sun"/>
             <div className={styles.toggleButton} onClick={theme}>
               <div className={styles.active} id='active-theme'></div>

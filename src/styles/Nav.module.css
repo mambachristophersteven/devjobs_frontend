@@ -28,7 +28,7 @@
     gap: 10px;
 }
 
-.toggle-button{
+.toggleButton{
     background: #ffffff;
     width: 45px;
     height: 22px;
@@ -49,14 +49,14 @@
     background: rgba(147, 155, 244, 1);
 }
 
-.toggle-button > div{
+.toggleButton > div{
     width: 14px;
     height: 14px;
     background: rgba(89, 100, 224, 1);
     border-radius: 50%;
 }
 
-.not-active{
+.notActive{
     visibility: hidden;
 }
 
