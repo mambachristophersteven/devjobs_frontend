@@ -40,3 +40,14 @@ body{
   background: var(--background-color);
 }
 
+.unchecked{
+  width: 20px;
+  height: 20px;
+  background: blue;
+}
+
+.check{
+  width: 20px;
+  height: 20px;
+  background: green;
+}
