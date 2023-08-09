@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Nav.module.css';
 import Button from './Button';
 
 export default function Nav() {
+  const [checkbox, setChecked] = useState(false);
+
+  function handleCheckBox(){
+    setChecked(!checkbox);
+  }
+
+  // let toggleChecked = checkbox ? 'unchecked' : 'checked';
 
 
   const theme = ()=>{
@@ -11,18 +18,18 @@ export default function Nav() {
     document.getElementById('not-active-theme').classList.toggle('notActive');
   }
 
-  const check = () =>{
-    let uncheckedbox =  document.getElementById('unchecked');
-    let checkedbox =  document.getElementById('checked');
-    checkedbox.style.display = 'flex';
-    uncheckedbox.style.display = 'none';
-  }
-  const uncheck = () =>{
-    let uncheckedbox =  document.getElementById('unchecked');
-    let checkedbox =  document.getElementById('checked');
-    checkedbox.style.display = 'none';
-    uncheckedbox.style.display = 'flex';
-  }
+  // const check = () =>{
+  //   let uncheckedbox =  document.getElementById('unchecked');
+  //   let checkedbox =  document.getElementById('checked');
+  //   checkedbox.style.display = 'flex';
+  //   uncheckedbox.style.display = 'none';
+  // }
+  // const uncheck = () =>{
+  //   let uncheckedbox =  document.getElementById('unchecked');
+  //   let checkedbox =  document.getElementById('checked');
+  //   checkedbox.style.display = 'none';
+  //   uncheckedbox.style.display = 'flex';
+  // }
   return (
     <div className={styles.container}>
         <div className={styles.top}>
@@ -49,10 +56,10 @@ export default function Nav() {
           </div>
           <div className={styles.searchFulltime}>
             <div className={styles.checkbox}>
-              <div className={styles.unchecked} id='unchecked' onClick={check}></div>
-              <div className={styles.check} id='checked' onClick={uncheck}>
+              <div className={checkbox ? "unchecked" : "check"} id='unchecked' onClick={handleCheckBox}></div>
+              {/* <div className={styles.check} id='checked' onClick={uncheck}>
                 <img src="/check.svg" alt="" />
-              </div>
+              </div> */}
               <p className={styles.fulltime}>Full Time Only</p>
             </div>
             <Button text={'Search'}/>
@@ -61,3 +68,5 @@ export default function Nav() {
     </div>
   )
 }
+
+
