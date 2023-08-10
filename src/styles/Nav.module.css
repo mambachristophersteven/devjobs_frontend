@@ -169,11 +169,16 @@
     width: 100%;
 }
 
+.searchFulltime .checkbox .fulltime span{
+    color: var(--fulltime-color);
+    font-family: kumbhBold;
+    font-size: 16px;
+    width: 100%;
+}
+
+
 
 @media screen and (max-width:768px){
-    .container{
-        border: 2px solid red;
-    }
 
     .top{
         padding: 0 50px 40px 50px;
@@ -186,6 +191,13 @@
     .searchbar{
         width: 90%;
     }
+    .checkbox{
+        border: 2px solid red;
+    }
+    .searchFulltime .checkbox .fulltime span{
+        display: none;
+    }
+    
 
     .searchbar > div{
         flex: 1;

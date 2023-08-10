@@ -60,7 +60,7 @@ export default function Nav() {
               {/* <div className={styles.check} id='checked' onClick={uncheck}>
                 <img src="/check.svg" alt="" />
               </div> */}
-              <p className={styles.fulltime}>Full Time Only</p>
+              <p className={styles.fulltime}>Full Time <span className='only'> Only</span></p>
             </div>
             <Button text={'Search'}/>
           </div>
