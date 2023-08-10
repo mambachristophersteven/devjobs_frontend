@@ -197,6 +197,10 @@
     .searchFulltime .checkbox .fulltime span{
         display: none;
     }
+
+    .searchFulltime{
+        gap: 10px;
+    }
     
 
     .searchbar > div{
