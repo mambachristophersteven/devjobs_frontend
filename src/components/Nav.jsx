@@ -61,9 +61,7 @@ export default function Nav() {
             <div className={styles.checkbox}>
               <div className={checkbox ? styles.check : styles.unchecked} id='unchecked' onClick={handleCheckBox}>
                 {checkbox && <img src="/check.svg" alt="" />}
-              </div>
-              
-              
+              </div>                         
               <p className={styles.fulltime}>Full Time <span className='only'> Only</span></p>
             </div>
             <Button text={'Search'}/>

@@ -192,14 +192,14 @@
         width: 90%;
     }
     .checkbox{
-        border: 2px solid red;
+        width: 60%;
     }
     .searchFulltime .checkbox .fulltime span{
         display: none;
     }
 
     .searchFulltime{
-        gap: 10px;
+        gap: 30px;
     }
     
 
