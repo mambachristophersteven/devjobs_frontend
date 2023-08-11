@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import styles from '../styles/Nav.module.css';
 import Button from './Button';
 
+
+
+
 export default function Nav() {
   const [checkbox, setChecked] = useState(false);
 
@@ -14,8 +17,8 @@ export default function Nav() {
 
   const theme = ()=>{
     document.body.classList.toggle("dark-mode");
-    document.getElementById('active-theme').classList.toggle('notActive');
-    document.getElementById('not-active-theme').classList.toggle('notActive');
+    document.getElementById('active-theme').classList.toggle(styles.notActive);
+    document.getElementById('not-active-theme').classList.toggle(styles.notActive);
   }
 
   // const check = () =>{
@@ -56,10 +59,11 @@ export default function Nav() {
           </div>
           <div className={styles.searchFulltime}>
             <div className={styles.checkbox}>
-              <div className={checkbox ? "unchecked" : "check"} id='unchecked' onClick={handleCheckBox}></div>
-              {/* <div className={styles.check} id='checked' onClick={uncheck}>
-                <img src="/check.svg" alt="" />
-              </div> */}
+              <div className={checkbox ? styles.check : styles.unchecked} id='unchecked' onClick={handleCheckBox}>
+                {checkbox && <img src="/check.svg" alt="" />}
+              </div>
+              
+              
               <p className={styles.fulltime}>Full Time <span className='only'> Only</span></p>
             </div>
             <Button text={'Search'}/>
