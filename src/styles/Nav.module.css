@@ -176,6 +176,10 @@
     width: 100%;
 }
 
+.mobileSearchbar{
+    display: none;
+}
+
 
 
 @media screen and (max-width:768px){
@@ -210,8 +214,28 @@
 
 
 
-@media screen and (max-width:768px){
+
+
+
+@media screen and (max-width:500px){
     .top{
         border-radius: 0px;
+        padding: 0 30px 40px 30px;
+    }
+    
+    .searchbar{
+        display: none;
+    }
+
+    .mobileSearchbar{
+        display: flex;
+        margin-top: -35px;
+        height: 70px;
+        background: var(--searchbar-background);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 6px;
+        width: 90vw;
     }
 }

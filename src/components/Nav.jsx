@@ -67,6 +67,13 @@ export default function Nav() {
             <Button text={'Search'}/>
           </div>
         </div>
+        <div className={styles.mobileSearchbar}>
+          <input type="text" id='companyName' placeholder='Filter by title…'/>
+          <img src="/alternate.svg" alt="filter" />
+          <button className={styles.mobileSearchButton}>
+            <img src="/white-search.svg" alt="search" />
+          </button>
+        </div>
     </div>
   )
 }
