@@ -2,7 +2,7 @@
     padding: 20px;
     padding-top: 20px;
     position: relative;
-    width: 49%;
+    width: 30%;
     height: 220px;
     margin-bottom: 50px;
     background: var(--job-background);
@@ -57,4 +57,11 @@
     color: var(--location-color);
     font-family: kumbh;
     font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 49%;
+
+    }
 }
