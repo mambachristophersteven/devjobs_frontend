@@ -9,9 +9,19 @@
 }
 
 .jobs{
-    width: 90vw;
+    width: 79vw;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.load{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:768px){
+    .jobs{
+        width: 90vw;
+    }
 }

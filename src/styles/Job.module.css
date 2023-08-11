@@ -45,6 +45,7 @@
 .jobTitle{
     font-size: 20px;
     font-family: kumbhBold;
+    color: var(--fulltime-color);
 }
 
 .companyName{
@@ -62,6 +63,12 @@
 @media screen and (max-width:768px){
     .container{
         width: 49%;
+    }
+}
 
+
+@media screen and (max-width:500px){
+    .container{
+        width: 100%;
     }
 }

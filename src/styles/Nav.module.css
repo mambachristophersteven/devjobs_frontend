@@ -61,7 +61,7 @@
 }
 
 .searchbar{
-    width: 77vw;
+    width: 79vw;
     height: 70px;
     margin-top: -35px;
     background: var(--searchbar-background);
@@ -189,7 +189,7 @@
     }
 
     .searchbar{
-        width: 90%;
+        width: 90vw;
     }
     .checkbox{
         width: 60%;
@@ -210,3 +210,8 @@
 
 
 
+@media screen and (max-width:768px){
+    .top{
+        border-radius: 0px;
+    }
+}

@@ -16,6 +16,7 @@ export default function Body() {
             <Job/>
             <Job/>
             <Job/>
+            <Job/>
         </div>
         <div className={styles.load}>
             <Button text={'Load More'}/>
