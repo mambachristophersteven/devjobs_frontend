@@ -12,6 +12,12 @@ export default function Nav() {
     setChecked(!checkbox);
   }
 
+  const [filter, setFilter] = useState(false);
+
+  function handleFilter(){
+    setFilter(!filter);
+  }
+
   // let toggleChecked = checkbox ? 'unchecked' : 'checked';
 
 
@@ -55,7 +61,7 @@ export default function Nav() {
           </div>
           <div className={styles.searchLocation}>
             <img src="/location.svg" alt="" />
-            <input type="text" id='companyName' placeholder='Filter by location…'/>
+            <input type="text" id='location' placeholder='Filter by location…'/>
           </div>
           <div className={styles.searchFulltime}>
             <div className={styles.checkbox}>
@@ -69,11 +75,27 @@ export default function Nav() {
         </div>
         <div className={styles.mobileSearchbar}>
           <input type="text" id='companyName' placeholder='Filter by title…'/>
-          <img src="/alternate.svg" alt="filter" />
+          <img src="/alternate.svg" alt="filter" className={styles.filter} onClick={handleFilter}/>
           <button className={styles.mobileSearchButton}>
             <img src="/white-search.svg" alt="search" />
           </button>
         </div>
+        {filter &&
+        <div className={styles.filterBox}>
+        <div className={styles.mobileLocation}>
+          <img src="/location.svg" alt="" />
+          <input type="text" id='location' placeholder='Filter by location…'/>
+        </div>
+        <hr />
+        <div className={styles.FilterCheckbox}>
+          <div className={checkbox ? styles.check : styles.unchecked} id='unchecked' onClick={handleCheckBox}>
+            {checkbox && <img src="/check.svg" alt="" />}
+          </div>                         
+          <p className={styles.fulltime}>Full Time Only</p>
+        </div>
+        <button className={styles.searchButton}>Search</button>
+      </div>}
+        
     </div>
   )
 }
