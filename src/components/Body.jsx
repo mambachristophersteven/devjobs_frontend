@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Body.module.css'
 import Button from './Button'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Jobs = [
   {
@@ -132,17 +132,19 @@ export default function Body() {
         <div className={styles.jobs}>
           {Jobs.map(Job=>(
             <div className={styles.jobContainer} key={Job.id}>
-            <img src={Job.image} alt={Job.alt} className={styles.companyImage}/>
-            <div className={styles.details}>
-              <div className={styles.topDetails}>
-                <p className={styles.timeAndRole}>{Job.posted} <span><img src="/oval.png" alt="" /></span>{Job.type}</p>
-                <p className={styles.jobTitle}>{Job.title}</p>
-                <p className={styles.companyName}>{Job.company}</p>
+              <Link to={'/details'}>
+                <img src={Job.image} alt={Job.alt} className={styles.companyImage}/>
+              </Link>
+              <div className={styles.details}>
+                <div className={styles.topDetails}>
+                  <p className={styles.timeAndRole}>{Job.posted} <span><img src="/oval.png" alt="" /></span>{Job.type}</p>
+                  <p className={styles.jobTitle}>{Job.title}</p>
+                  <p className={styles.companyName}>{Job.company}</p>
+                </div>
+                <div className={styles.bottomDetails}>
+                  <p className={styles.location}>{Job.location}</p>
+                </div>
               </div>
-              <div className={styles.bottomDetails}>
-                <p className={styles.location}>{Job.location}</p>
-              </div>
-            </div>
           </div>
           ))}
         </div>
