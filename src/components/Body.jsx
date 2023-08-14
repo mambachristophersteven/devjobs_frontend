@@ -124,6 +124,7 @@ const Jobs = [
     company: "Typemaster",
     location: "United Kingdom", 
   },
+  
 ];
 
 export default function Body() {

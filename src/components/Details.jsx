@@ -4,6 +4,7 @@ import Top from './Top'
 import DetailsButton from './DetailsButton'
 
 export default function Details() {
+  
   return (
     <div className={styles.container}>
         <Top/>
