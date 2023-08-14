@@ -16,6 +16,10 @@
   --job-background: rgba(255, 255, 255, 1);
   --role-color: rgba(110, 128, 152, 1);
   --location-color: rgba(89, 100, 224, 1);
+  --companyButton-color: rgba(201, 201, 201, 0.19);
+  --companyButton-text: rgba(89, 100, 224, 1);
+  --companyButton-hover: rgba(197, 201, 244, 1);
+  --job-description-color: rgba(110, 128, 152, 1);
 }
 
 .dark-mode{
@@ -25,6 +29,10 @@
   --fulltime-color: rgba(255, 255, 255, 1);
   --checkbox-background: rgba(151, 151, 151, 1);
   --job-background: rgba(25, 32, 45, 1);
+  --companyButton-color: rgba(201, 201, 201, 0.19);
+  --companyButton-text: rgba(255, 255, 255, 1);
+  --companyButton-hover: rgba(82, 88, 97, 1);
+  --job-description-color: rgba(157, 174, 194, 1);
 
 }
 

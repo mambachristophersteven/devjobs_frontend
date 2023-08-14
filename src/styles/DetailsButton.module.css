@@ -1,0 +1,16 @@
+.container{
+    width: 141px;
+    height: 48px;
+    background: rgba(89, 100, 224, 1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: kumbhBold;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.container:hover{
+    background: rgba(147, 155, 244, 1);
+}

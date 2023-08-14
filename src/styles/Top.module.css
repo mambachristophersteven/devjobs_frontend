@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 25vh;
+    position: relative;
+    align-items: center;
+}
+
+.top{
+    width: 100vw;
+    background-image: url(../../public/background.png);
+    height: 15vh;
+    border-radius: 0px 0px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 40px 200px;
+}
+
+.top .logo img{
+    width: 100px;
+    height: 30px;
+}
+
+.toggler{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggleButton{
+    background: #ffffff;
+    width: 45px;
+    height: 22px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 5px;
+}
+
+.active{
+    /* transition-duration: 0.3s; */
+    cursor: pointer;
+}
+
+.active:hover{
+    background: rgba(147, 155, 244, 1);
+}
+
+.toggleButton > div{
+    width: 14px;
+    height: 14px;
+    background: rgba(89, 100, 224, 1);
+    border-radius: 50%;
+}
+
+.notActive{
+    visibility: hidden;
+}
+
+.companyNameInfo{
+    width: 50vw;
+    height: 140px;
+    margin-top: -50px;
+    background: var(--searchbar-background);
+    display: flex;
+    align-items: center;
+}
+
+.companyImage{
+    height: inherit;
+}
+
+.companyNameSite{
+    display: flex;
+    padding: 0px 40px 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.companyName{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name{
+    font-family: kumbhBold;
+    font-size: 24px;
+    color: var(--fulltime-color);
+}
+
+.website{
+    font-family: kumbh;
+    font-size: 16px;
+    color: rgba(110, 128, 152, 1);
+}
+
+.buttonLink{
+    background: var(--companyButton-color);
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    height: 47px;
+    border-radius: 5px;
+    color: var(--companyButton-text);
+    font-family: kumbhBold;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+.buttonLink:hover{
+    background: var(--companyButton-hover);
+}
+
+@media screen and (max-width:768px){
+
+    .top{
+        padding: 0 50px 40px 50px;
+    }
+
+    .toggler{
+        gap: 5px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .top{
+        border-radius: 0px;
+        padding: 0 30px 40px 30px;
+    }
+}

@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.body{
+    width: 50vw;
+    padding: 40px 40px 30px 40px;
+    background: var(--job-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timeAndRole{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: var(--role-color);
+    font-size: 16px;
+    font-family: kumbh;
+}
+
+.timeAndRole span{
+    margin-bottom: 5px;
+}
+
+.jobTitle{
+    font-size: 28px;
+    font-family: kumbhBold;
+    color: var(--fulltime-color);
+}
+
+.location{
+    color: var(--location-color);
+    font-family: kumbhBold;
+    font-size: 14px;
+}
+
+.jobDescription{
+    font-size: 16px;
+    color: var(--job-description-color);
+    line-height: 26px;
+    font-family: kumbh;
+}
+
+.requirementsSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionHeading{
+    font-size: 20px;
+    font-family: kumbhBold;
+    color: var(--fulltime-color);
+    text-transform: capitalize;
+}
+
+.requirementText{
+    font-size: 16px;
+    color: var(--job-description-color);
+    line-height: 26px;
+    font-family: kumbh;
+}
+
+.requirementsSection ul{
+    list-style: circle;
+    list-style-image: url(../../public/companies/list.svg);
+    font-size: 16px;
+    color: var(--job-description-color);
+    line-height: 26px;
+    font-family: kumbh;
+    padding-left: 10px;
+}
+
+.willDo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.willDo ol{
+    font-size: 16px;
+    color: var(--job-description-color);
+    line-height: 26px;
+    font-family: kumbh;
+    list-style-image: url(../../public/companies/list.svg);
+    padding-left: 10px;
+}
+
+.bottom{
+    width: 100%;
+    background: var(--job-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomContent{
+    display: flex;
+    width: 50vw;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
