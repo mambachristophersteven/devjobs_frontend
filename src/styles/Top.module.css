@@ -10,7 +10,7 @@
 .top{
     width: 100vw;
     background-image: url(../../public/background.png);
-    height: 15vh;
+    min-height: 15vh;
     border-radius: 0px 0px 0 100px;
     display: flex;
     align-items: center;
@@ -116,10 +116,18 @@
     background: var(--companyButton-hover);
 }
 
+.mobileCompanyNameInfo{
+    display: none;
+}
+
 @media screen and (max-width:768px){
 
     .top{
-        padding: 0 50px 40px 50px;
+        padding: 0 40px 40px 40px;
+    }
+    .companyNameInfo{
+        width: 90vw;
+        height: 140px;
     }
 
     .toggler{
@@ -132,5 +140,28 @@
     .top{
         border-radius: 0px;
         padding: 0 30px 40px 30px;
+        
+    }
+    .companyNameInfo{
+        display: none;
+    }
+    .mobileCompanyNameInfo{
+        display: flex;
+        flex-direction: column;
+        background: var(--searchbar-background);
+        width: 90%;
+        height: 205px;
+        margin-top: -20px;
+        gap: 10px;
+        padding: 50px 20px 30px 20px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .mobileCompanyNameInfo img{
+        width: 50px;
+        position: absolute;
+        top: -20px;
+        border-radius: 15px;
     }
 }

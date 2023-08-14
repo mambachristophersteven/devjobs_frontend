@@ -124,3 +124,29 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 768px) {
+    .body{
+        width: 90vw;
+    }
+    .bottomContent{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .body{
+        margin-top: 100px;
+    }
+    .title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .jobTitle{
+        font-size: 20px;
+    }
+    .companyInfo{
+        display: none;
+    }
+}

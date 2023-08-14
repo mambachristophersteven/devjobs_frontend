@@ -34,6 +34,12 @@ export default function Top() {
           </div>
         </div>
       </div>
+      <div className={styles.mobileCompanyNameInfo}>
+        <img src="/companies/scoot.svg" alt="company logo" />
+        <p className={styles.name}>Scoot</p>
+        <p className={styles.website}>scoot.com</p>
+        <button className={styles.buttonLink}>Company Site</button>
+      </div>
     </div>
     
   )
